@@ -9,6 +9,7 @@ app.get("/api/users", (req, res) => {
     res.status(200).send(friends);
 });
 
+/* below can be accessed through  http://localhost:4000/weather/hot or  http://localhost:4000/weather/cold */
 app.get("/weather/:temperature", (req, res) => {
     // const phrase = `<h3>It was ${req.params.temperature} today</h3>`;
     const {temperature} = req.params; /* object destructuring to increase readability */
